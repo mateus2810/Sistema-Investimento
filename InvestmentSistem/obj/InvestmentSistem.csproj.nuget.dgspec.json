@@ -40,9 +40,21 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
+            "DocumentFormat.OpenXml": {
+              "target": "Package",
+              "version": "[2.20.0, )"
+            },
             "Microsoft.Data.Sqlite.Core": {
               "target": "Package",
-              "version": "[8.0.1, )"
+              "version": "[7.0.13, )"
+            },
+            "SQLite": {
+              "target": "Package",
+              "version": "[3.13.0, )"
+            },
+            "SQLitePCLRaw.bundle_e_sqlite3": {
+              "target": "Package",
+              "version": "[2.1.6, )"
             }
           },
           "imports": [

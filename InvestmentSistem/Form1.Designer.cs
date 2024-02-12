@@ -34,11 +34,11 @@
             this.nomeAcaoFundoLabel = new System.Windows.Forms.Label();
             this.ValorLabel = new System.Windows.Forms.Label();
             this.quantidadeCotaLabel = new System.Windows.Forms.Label();
-            this.dataCompraTextBox = new System.Windows.Forms.TextBox();
             this.nomeAcaoFundoTextBox = new System.Windows.Forms.TextBox();
             this.valorAcaoFundoTextBox = new System.Windows.Forms.TextBox();
             this.quantidadeCotaTextBox = new System.Windows.Forms.TextBox();
             this.salvarButton = new System.Windows.Forms.Button();
+            this.dataCompraDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // tipoLabel
@@ -56,7 +56,7 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "FII",
-            "Ações"});
+            "Ação"});
             this.comboBox1.Location = new System.Drawing.Point(220, 94);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(151, 28);
@@ -98,13 +98,6 @@
             this.quantidadeCotaLabel.TabIndex = 5;
             this.quantidadeCotaLabel.Text = "Quantidade Cota";
             // 
-            // dataCompraTextBox
-            // 
-            this.dataCompraTextBox.Location = new System.Drawing.Point(220, 189);
-            this.dataCompraTextBox.Name = "dataCompraTextBox";
-            this.dataCompraTextBox.Size = new System.Drawing.Size(151, 27);
-            this.dataCompraTextBox.TabIndex = 6;
-            // 
             // nomeAcaoFundoTextBox
             // 
             this.nomeAcaoFundoTextBox.Location = new System.Drawing.Point(220, 245);
@@ -136,16 +129,25 @@
             this.salvarButton.UseVisualStyleBackColor = true;
             this.salvarButton.Click += new System.EventHandler(this.salvarButton_Click);
             // 
+            // dataCompraDateTimePicker
+            // 
+            this.dataCompraDateTimePicker.CustomFormat = "dd-MM-yyyy";
+            this.dataCompraDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dataCompraDateTimePicker.Location = new System.Drawing.Point(220, 189);
+            this.dataCompraDateTimePicker.Name = "dataCompraDateTimePicker";
+            this.dataCompraDateTimePicker.Size = new System.Drawing.Size(168, 27);
+            this.dataCompraDateTimePicker.TabIndex = 11;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dataCompraDateTimePicker);
             this.Controls.Add(this.salvarButton);
             this.Controls.Add(this.quantidadeCotaTextBox);
             this.Controls.Add(this.valorAcaoFundoTextBox);
             this.Controls.Add(this.nomeAcaoFundoTextBox);
-            this.Controls.Add(this.dataCompraTextBox);
             this.Controls.Add(this.quantidadeCotaLabel);
             this.Controls.Add(this.ValorLabel);
             this.Controls.Add(this.nomeAcaoFundoLabel);
@@ -167,10 +169,10 @@
         private Label nomeAcaoFundoLabel;
         private Label ValorLabel;
         private Label quantidadeCotaLabel;
-        private TextBox dataCompraTextBox;
         private TextBox nomeAcaoFundoTextBox;
         private TextBox valorAcaoFundoTextBox;
         private TextBox quantidadeCotaTextBox;
         private Button salvarButton;
+        private DateTimePicker dataCompraDateTimePicker;
     }
 }

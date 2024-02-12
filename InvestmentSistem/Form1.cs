@@ -1,10 +1,14 @@
 using Microsoft.Data.Sqlite;
+using System;
+using System.IO;
+using System.Windows.Forms;
 
 namespace InvestmentSistem
 {
     public partial class Form1 : Form
     {
         private SqliteConnection connection;
+
         public Form1()
         {
             InitializeComponent();
@@ -13,12 +17,11 @@ namespace InvestmentSistem
 
         private void tipoLabel_Click(object sender, EventArgs e)
         {
-
+            // Código que você deseja executar quando o rótulo é clicado
         }
 
         public void InicializarBD()
         {
-            
             // Obtenha o diretório base do aplicativo (onde o executável está localizado)
             string diretorioBase = AppDomain.CurrentDomain.BaseDirectory;
 
@@ -32,12 +35,12 @@ namespace InvestmentSistem
 
             connection.Open();
 
-            // Crie a tabela se ela ainda não existir'
+            // Crie a tabela se ela ainda não existir
             using (var cmd = new SqliteCommand
                 ("CREATE TABLE IF NOT EXISTS RegistroInvestimento " +
                 "(ID INTEGER PRIMARY KEY, dataCompra DATETIME," +
                 " nomeAcaoFundo TEXT, valor DECIMAL, quantidadeCota INTEGER," +
-                "valorTotal DECIMAL)", connection))
+                " valorTotal DECIMAL)", connection))
             {
                 cmd.ExecuteNonQuery();
             }
@@ -45,8 +48,15 @@ namespace InvestmentSistem
 
         private void salvarButton_Click(object sender, EventArgs e)
         {
-            decimal valorTotal = Convert.ToInt32(quantidadeCotaTextBox) * Convert.ToInt32(valorAcaoFundoTextBox);
+            var tratamentoDataCompra = dataCompraDateTimePicker.Value.ToString("dd-MM-yyyy HH:mm");
+            // Converta os valores dos campos de texto para os tipos de dados adequados
+            DateTime dataCompra = Convert.ToDateTime(tratamentoDataCompra);
+            string nomeAcaoFundo = nomeAcaoFundoTextBox.Text;
+            decimal valor = Convert.ToDecimal(valorAcaoFundoTextBox.Text);
+            int quantidadeCota = Convert.ToInt32(quantidadeCotaTextBox.Text);
+            decimal valorTotal = valor * quantidadeCota;
 
+            // Query para inserir os dados no banco de dados
             string insertQuery = "INSERT INTO RegistroInvestimento" +
                 "(dataCompra, nomeAcaoFundo, valor, quantidadeCota, valorTotal) " +
                 "VALUES " +
@@ -54,10 +64,10 @@ namespace InvestmentSistem
 
             using (var cmd = new SqliteCommand(insertQuery, connection))
             {
-                cmd.Parameters.AddWithValue("@dataCompra", dataCompraLabel);
-                cmd.Parameters.AddWithValue("@nomeAcaoFundo", nomeAcaoFundoLabel);
-                cmd.Parameters.AddWithValue("@valor", valorAcaoFundoTextBox);
-                cmd.Parameters.AddWithValue("@quantidadeCota", quantidadeCotaTextBox);
+                cmd.Parameters.AddWithValue("@dataCompra", dataCompra);
+                cmd.Parameters.AddWithValue("@nomeAcaoFundo", nomeAcaoFundo.ToUpper().Trim());
+                cmd.Parameters.AddWithValue("@valor", valor);
+                cmd.Parameters.AddWithValue("@quantidadeCota", quantidadeCota);
                 cmd.Parameters.AddWithValue("@valorTotal", valorTotal);
                 cmd.ExecuteNonQuery();
             }

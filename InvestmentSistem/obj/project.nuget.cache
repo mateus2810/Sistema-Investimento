@@ -1,11 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "H4MKDs0CGTX2b/xwt19ek+0Qd3WS5lQyMf+mQX96v0KhuAclI/cPuD/hGpkF7QytAJlYceBZh6h5PT6zV6NfnA==",
+  "dgSpecHash": "25GHJtgsC6y0RrH44x9zq6QMCqClOAIuBHEYE/MHcuJVAgQXRwCI2Wj4LeT4nq00yuzuYpYA5Z21RYrpmBbJLw==",
   "success": true,
   "projectFilePath": "C:\\Users\\mateu\\OneDrive\\Área de Trabalho\\Utilitarios\\projetos\\Sistema-Investimento\\InvestmentSistem\\InvestmentSistem.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\mateu\\.nuget\\packages\\microsoft.data.sqlite.core\\8.0.1\\microsoft.data.sqlite.core.8.0.1.nupkg.sha512",
+    "C:\\Users\\mateu\\.nuget\\packages\\documentformat.openxml\\2.20.0\\documentformat.openxml.2.20.0.nupkg.sha512",
+    "C:\\Users\\mateu\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.13\\microsoft.data.sqlite.core.7.0.13.nupkg.sha512",
+    "C:\\Users\\mateu\\.nuget\\packages\\sqlite\\3.13.0\\sqlite.3.13.0.nupkg.sha512",
+    "C:\\Users\\mateu\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.6\\sqlitepclraw.bundle_e_sqlite3.2.1.6.nupkg.sha512",
     "C:\\Users\\mateu\\.nuget\\packages\\sqlitepclraw.core\\2.1.6\\sqlitepclraw.core.2.1.6.nupkg.sha512",
+    "C:\\Users\\mateu\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.6\\sqlitepclraw.lib.e_sqlite3.2.1.6.nupkg.sha512",
+    "C:\\Users\\mateu\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.6\\sqlitepclraw.provider.e_sqlite3.2.1.6.nupkg.sha512",
+    "C:\\Users\\mateu\\.nuget\\packages\\system.io.packaging\\4.7.0\\system.io.packaging.4.7.0.nupkg.sha512",
     "C:\\Users\\mateu\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
   ],
   "logs": []
