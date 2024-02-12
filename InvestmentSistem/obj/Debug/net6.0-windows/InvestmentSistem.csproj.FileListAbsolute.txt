@@ -1,0 +1,17 @@
+C:\Users\mateu\OneDrive\Área de Trabalho\Utilitarios\projetos\Sistema-Investimento\InvestmentSistem\bin\Debug\net6.0-windows\InvestmentSistem.exe
+C:\Users\mateu\OneDrive\Área de Trabalho\Utilitarios\projetos\Sistema-Investimento\InvestmentSistem\bin\Debug\net6.0-windows\InvestmentSistem.deps.json
+C:\Users\mateu\OneDrive\Área de Trabalho\Utilitarios\projetos\Sistema-Investimento\InvestmentSistem\bin\Debug\net6.0-windows\InvestmentSistem.runtimeconfig.json
+C:\Users\mateu\OneDrive\Área de Trabalho\Utilitarios\projetos\Sistema-Investimento\InvestmentSistem\bin\Debug\net6.0-windows\InvestmentSistem.dll
+C:\Users\mateu\OneDrive\Área de Trabalho\Utilitarios\projetos\Sistema-Investimento\InvestmentSistem\bin\Debug\net6.0-windows\InvestmentSistem.pdb
+C:\Users\mateu\OneDrive\Área de Trabalho\Utilitarios\projetos\Sistema-Investimento\InvestmentSistem\obj\Debug\net6.0-windows\InvestmentSistem.csproj.AssemblyReference.cache
+C:\Users\mateu\OneDrive\Área de Trabalho\Utilitarios\projetos\Sistema-Investimento\InvestmentSistem\obj\Debug\net6.0-windows\InvestmentSistem.Form1.resources
+C:\Users\mateu\OneDrive\Área de Trabalho\Utilitarios\projetos\Sistema-Investimento\InvestmentSistem\obj\Debug\net6.0-windows\InvestmentSistem.csproj.GenerateResource.cache
+C:\Users\mateu\OneDrive\Área de Trabalho\Utilitarios\projetos\Sistema-Investimento\InvestmentSistem\obj\Debug\net6.0-windows\InvestmentSistem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mateu\OneDrive\Área de Trabalho\Utilitarios\projetos\Sistema-Investimento\InvestmentSistem\obj\Debug\net6.0-windows\InvestmentSistem.AssemblyInfoInputs.cache
+C:\Users\mateu\OneDrive\Área de Trabalho\Utilitarios\projetos\Sistema-Investimento\InvestmentSistem\obj\Debug\net6.0-windows\InvestmentSistem.AssemblyInfo.cs
+C:\Users\mateu\OneDrive\Área de Trabalho\Utilitarios\projetos\Sistema-Investimento\InvestmentSistem\obj\Debug\net6.0-windows\InvestmentSistem.csproj.CoreCompileInputs.cache
+C:\Users\mateu\OneDrive\Área de Trabalho\Utilitarios\projetos\Sistema-Investimento\InvestmentSistem\obj\Debug\net6.0-windows\InvestmentSistem.dll
+C:\Users\mateu\OneDrive\Área de Trabalho\Utilitarios\projetos\Sistema-Investimento\InvestmentSistem\obj\Debug\net6.0-windows\refint\InvestmentSistem.dll
+C:\Users\mateu\OneDrive\Área de Trabalho\Utilitarios\projetos\Sistema-Investimento\InvestmentSistem\obj\Debug\net6.0-windows\InvestmentSistem.pdb
+C:\Users\mateu\OneDrive\Área de Trabalho\Utilitarios\projetos\Sistema-Investimento\InvestmentSistem\obj\Debug\net6.0-windows\InvestmentSistem.genruntimeconfig.cache
+C:\Users\mateu\OneDrive\Área de Trabalho\Utilitarios\projetos\Sistema-Investimento\InvestmentSistem\obj\Debug\net6.0-windows\ref\InvestmentSistem.dll

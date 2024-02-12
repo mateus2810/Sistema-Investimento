@@ -6,5 +6,10 @@ namespace InvestmentSistem
         {
             InitializeComponent();
         }
+
+        private void tipoLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
