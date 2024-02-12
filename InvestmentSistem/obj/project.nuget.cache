@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "RTOtckAM5N6NeDFVUvtuG1Adb2E5kTuAzQJtcIwg+PeAezd9Q85AEeIgeVc3c/sckANEPgGMZ7Ez1S8FGzZffg==",
+  "dgSpecHash": "H4MKDs0CGTX2b/xwt19ek+0Qd3WS5lQyMf+mQX96v0KhuAclI/cPuD/hGpkF7QytAJlYceBZh6h5PT6zV6NfnA==",
   "success": true,
   "projectFilePath": "C:\\Users\\mateu\\OneDrive\\Área de Trabalho\\Utilitarios\\projetos\\Sistema-Investimento\\InvestmentSistem\\InvestmentSistem.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\mateu\\.nuget\\packages\\microsoft.data.sqlite.core\\8.0.1\\microsoft.data.sqlite.core.8.0.1.nupkg.sha512",
+    "C:\\Users\\mateu\\.nuget\\packages\\sqlitepclraw.core\\2.1.6\\sqlitepclraw.core.2.1.6.nupkg.sha512",
+    "C:\\Users\\mateu\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+  ],
   "logs": []
 }
