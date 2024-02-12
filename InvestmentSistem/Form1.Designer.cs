@@ -38,6 +38,7 @@
             this.nomeAcaoFundoTextBox = new System.Windows.Forms.TextBox();
             this.valorAcaoFundoTextBox = new System.Windows.Forms.TextBox();
             this.quantidadeCotaTextBox = new System.Windows.Forms.TextBox();
+            this.salvarButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tipoLabel
@@ -125,11 +126,22 @@
             this.quantidadeCotaTextBox.Size = new System.Drawing.Size(151, 27);
             this.quantidadeCotaTextBox.TabIndex = 9;
             // 
+            // salvarButton
+            // 
+            this.salvarButton.Location = new System.Drawing.Point(440, 391);
+            this.salvarButton.Name = "salvarButton";
+            this.salvarButton.Size = new System.Drawing.Size(94, 29);
+            this.salvarButton.TabIndex = 10;
+            this.salvarButton.Text = "Salvar";
+            this.salvarButton.UseVisualStyleBackColor = true;
+            this.salvarButton.Click += new System.EventHandler(this.salvarButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.salvarButton);
             this.Controls.Add(this.quantidadeCotaTextBox);
             this.Controls.Add(this.valorAcaoFundoTextBox);
             this.Controls.Add(this.nomeAcaoFundoTextBox);
@@ -159,5 +171,6 @@
         private TextBox nomeAcaoFundoTextBox;
         private TextBox valorAcaoFundoTextBox;
         private TextBox quantidadeCotaTextBox;
+        private Button salvarButton;
     }
 }

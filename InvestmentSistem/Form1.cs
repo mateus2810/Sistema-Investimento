@@ -4,6 +4,7 @@ namespace InvestmentSistem
 {
     public partial class Form1 : Form
     {
+        private SqliteConnection connection;
         public Form1()
         {
             InitializeComponent();
@@ -17,7 +18,7 @@ namespace InvestmentSistem
 
         public void InicializarBD()
         {
-            SqliteConnection connection;
+            
             // Obtenha o diretório base do aplicativo (onde o executável está localizado)
             string diretorioBase = AppDomain.CurrentDomain.BaseDirectory;
 
@@ -40,6 +41,28 @@ namespace InvestmentSistem
             {
                 cmd.ExecuteNonQuery();
             }
+        }
+
+        private void salvarButton_Click(object sender, EventArgs e)
+        {
+            decimal valorTotal = Convert.ToInt32(quantidadeCotaTextBox) * Convert.ToInt32(valorAcaoFundoTextBox);
+
+            string insertQuery = "INSERT INTO RegistroInvestimento" +
+                "(dataCompra, nomeAcaoFundo, valor, quantidadeCota, valorTotal) " +
+                "VALUES " +
+                "(@dataCompra, @nomeAcaoFundo, @valor, @quantidadeCota, @valorTotal)";
+
+            using (var cmd = new SqliteCommand(insertQuery, connection))
+            {
+                cmd.Parameters.AddWithValue("@dataCompra", dataCompraLabel);
+                cmd.Parameters.AddWithValue("@nomeAcaoFundo", nomeAcaoFundoLabel);
+                cmd.Parameters.AddWithValue("@valor", valorAcaoFundoTextBox);
+                cmd.Parameters.AddWithValue("@quantidadeCota", quantidadeCotaTextBox);
+                cmd.Parameters.AddWithValue("@valorTotal", valorTotal);
+                cmd.ExecuteNonQuery();
+            }
+
+            MessageBox.Show("Dados salvos com sucesso!");
         }
     }
 }
